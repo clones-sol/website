@@ -1,6 +1,6 @@
-# Viralmind Website
+# Clones Website
 
-This is the website for the Viralmind project.
+This is the website for Clones project.
 
 Computer-Use AI for everyone.
 We believe we can create a revolution.

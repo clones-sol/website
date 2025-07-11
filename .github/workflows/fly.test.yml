@@ -1,9 +1,9 @@
-name: Fly Deploy
+name: Fly Deploy (env test)
 
 on:
   push:
     branches:
-      - main
+      - test
 
 jobs:
   deploy:
@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only
+      - run: flyctl deploy --remote-only -c fly.test.toml
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }} 

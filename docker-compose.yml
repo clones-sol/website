@@ -1,9 +1,9 @@
 services:
-  frontend-dev:
+  clones-website-dev:
     build:
       context: .
       dockerfile: ./Dockerfile.dev
-    container_name: frontend
+    container_name: clones-website
     working_dir: /app
     tty: true
     ports:
@@ -11,5 +11,6 @@ services:
     command: npm run dev
     volumes: 
       - ./:/app/
+      - /app/node_modules
     environment:
       - PUBLIC_API_URL=http://localhost:8001

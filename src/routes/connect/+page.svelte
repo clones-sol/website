@@ -40,7 +40,7 @@
 
       // Create message with timestamp nonce
       const timestamp = Date.now();
-      const message = `viralmind desktop\nnonce: ${timestamp}`;
+      const message = `Clones desktop\nnonce: ${timestamp}`;
 
       // Sign the message
       if (!$walletStore.signMessage) {
@@ -67,7 +67,7 @@
       });
 
       // Close window after successful connection
-      window.location.href = 'viralmind://open';
+      window.location.href = 'clones://open';
       // window.close();
     } catch (err: unknown) {
       console.error(err);
