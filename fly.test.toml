@@ -7,7 +7,7 @@ app = 'clones-website-test'
 primary_region = 'cdg'
 
 [env]
-  PUBLIC_API_URL = "http://clones-api-test.fly.dev"
+  PUBLIC_API_URL = "https://clones-backend-test.fly.dev"
 
 [http_service]
   internal_port = 3000
