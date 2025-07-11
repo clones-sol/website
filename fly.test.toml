@@ -6,6 +6,9 @@
 app = 'clones-website-test'
 primary_region = 'cdg'
 
+[env]
+  PUBLIC_API_URL = "http://clones-api-test.fly.dev"
+
 [http_service]
   internal_port = 3000
   force_https = true
