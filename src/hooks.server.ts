@@ -6,6 +6,10 @@ export const handle: Handle = async ({ event, resolve }) => {
         return new Response(null, { status: 404 });
     }
 
+    if (event.url.pathname.includes('.well-known')) {
+        return new Response(null, { status: 204 });
+    }
+
     const response = await resolve(event);
     return response;
 };
