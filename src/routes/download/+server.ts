@@ -34,7 +34,7 @@ export const GET: RequestHandler = async () => {
           url: `${baseUrl}Clones.Desktop_${version}_x64_en-US.msi`
         },
         'windows-arm64': {
-          url: `${baseUrl}Clones.Desktop_${version}_arm64_en-US.msi `
+          url: `${baseUrl}Clones.Desktop_${version}_arm64_en-US.msi`
         },
         'darwin-aarch64': {
           url: `${baseUrl}Clones.Desktop_${version}_aarch64.dmg`
